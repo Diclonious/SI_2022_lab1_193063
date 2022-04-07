@@ -1,5 +1,5 @@
-Milk
-Tortillas
-Coffee
-Bread
-Soup
+Milk x2
+Tortillas x5
+Coffee x1
+Bread x1
+Soup x5
