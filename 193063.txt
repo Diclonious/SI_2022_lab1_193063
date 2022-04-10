@@ -1,0 +1,34 @@
+git init
+git remote add origin 
+git remote -v
+git checkout -b master
+git clone https://github.com/Diclonious/SI_2022_lab1_193063
+git add .
+git commit -m "Add 5 items to the shopping list"
+git commit -a -m "Add quantities to the items"
+git checkout -b branch1
+git checkout -b branch2
+
+
+git push --all
+git checkout branch1
+git commit -a -m "Change quantity of item #5"
+git checkout master
+git commit -a -m "Change quantity of item #2"
+git push --all
+git checkout branch2
+git commit -a -m "Modify item #4"
+
+git commit -a -m "add item #6"
+git rebase -i --root
+
+
+git checkout master
+git merge branch1
+git merge --no-ff branch2-> Se javuva error pri merge na 2ta branches zatoa vo .txt dokumentot ke imame
+sto se naoga na HEAD i na branch2 taka odlucuvame sto da ostane a sto da go trgneme poradi toa sto ima
+kontradiktorni promeni. Go menuvame .txt dokumentot kako sto sakame i pravime git commit -a -m "solving 
+merge commit"
+git add .
+git commit -m "Add docs"
+git push --all
